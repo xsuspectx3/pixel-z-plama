@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.4), 0 0 30px rgba(168, 85, 247, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.8), 0 0 45px rgba(168, 85, 247, 0.5);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.8s infinite ease-in-out;
+}
